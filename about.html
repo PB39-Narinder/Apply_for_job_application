@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--indian-blue));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 16px;
+            margin-bottom: 3rem;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        .mission-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin: 4rem 0;
+        }
+
+        .mission-content {
+            padding-right: 2rem;
+        }
+
+        .mission-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .mission-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-section {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .team-info {
+            padding: 1.5rem;
+        }
+
+        .team-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: var(--bg-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .mission-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .mission-content {
+                padding-right: 0;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="https://img.freepik.com/premium-vector/minimalist-type-creative-business-logo-template_1283348-23026.jpg?semt=ais_hybrid" alt="Company Logo" class="nav-logo">
+            <span>ਨੌਕਰੀ ਪੋਰਟਲ</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Apply Now</a>
+            <a href="jobs.html" class="nav-link">Jobs</a>
+            <a href="about.html" class="nav-link active">About Us</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="page-container">
+        <div class="hero-section">
+            <h1 class="hero-title">Connecting Talent with Opportunity</h1>
+            <p class="hero-subtitle">We're on a mission to revolutionize the way people find their dream jobs in India</p>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Active Jobs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5M+</div>
+                <div class="stat-label">Job Seekers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2K+</div>
+                <div class="stat-label">Companies</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+        </div>
+
+        <div class="mission-section">
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <p>At ਨੌਕਰੀ ਪੋਰਟਲ, we believe in creating meaningful connections between talented professionals and leading companies. Our platform serves as a bridge, making the hiring process efficient and accessible to all.</p>
+                <p>We're committed to:</p>
+                <ul>
+                    <li>Providing equal opportunities to all job seekers</li>
+                    <li>Maintaining transparency in the hiring process</li>
+                    <li>Supporting career growth and development</li>
+                    <li>Empowering businesses with the right talent</li>
+                </ul>
+            </div>
+            <div class="mission-image">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Team Meeting">
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Team Member" class="team-image">
+                    <div class="team-info">
+                        <h3 class="team-name">Rajinder Singh</h3>
+                        <p class="team-role">CEO & Founder</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Li</a>
+                            <a href="#" class="social-link">Tw</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg" alt="Team Member" class="team-image">
+                    <div class="team-info">
+                        <h3 class="team-name">Preet Kaur</h3>
+                        <p class="team-role">Head of Operations</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Li</a>
+                            <a href="#" class="social-link">Tw</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Team Member" class="team-image">
+                    <div class="team-info">
+                        <h3 class="team-name">Harpreet Singh</h3>
+                        <p class="team-role">Technical Lead</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Li</a>
+                            <a href="#" class="social-link">Tw</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

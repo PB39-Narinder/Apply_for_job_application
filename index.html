@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="https://img.freepik.com/premium-vector/minimalist-type-creative-business-logo-template_1283348-23026.jpg?semt=ais_hybrid" alt="Company Logo" class="nav-logo">
+            <span>ਨੌਕਰੀ ਪੋਰਟਲ</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Apply Now</a>
+            <a href="jobs.html" class="nav-link">Jobs</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="page-container">
+        <div class="form-header">
+            <h1>Job Application Form</h1>
+            <p class="subtitle">ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਵੇਰਵਾ ਭਰੋ / Please fill in your details</p>
+        </div>
+
+        <form action="Thanks.html" class="application-form">
+            <div class="progress-bar">
+                <div class="progress-step active" data-step="personal">
+                    <div class="step-number">1</div>
+                    <span>Personal</span>
+                </div>
+                <div class="progress-step" data-step="education">
+                    <div class="step-number">2</div>
+                    <span>Education</span>
+                </div>
+                <div class="progress-step" data-step="professional">
+                    <div class="step-number">3</div>
+                    <span>Professional</span>
+                </div>
+            </div>
+
+            <!-- Personal Information -->
+            <section class="form-section" id="personal-section">
+                <h2 class="section-title">Personal Information / ਨਿੱਜੀ ਜਾਣਕਾਰੀ</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" placeholder="Enter your first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mname">Middle Name</label>
+                        <input type="text" id="mname" placeholder="Enter your middle name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" placeholder="Enter your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="aadhar">Aadhar Number</label>
+                        <input type="text" id="aadhar" placeholder="XXXX-XXXX-XXXX" maxlength="12">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pan">PAN Number</label>
+                        <input type="text" id="pan" placeholder="ABCDE1234F" maxlength="10">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Mobile Number</label>
+                        <input type="tel" id="phone" placeholder="+91 XXXXX-XXXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="">Select State</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CG">Chhattisgarh</option>
+                            <option value="GA">Goa</option>
+                            <option value="GJ">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OR">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TG">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="UK">Uttarakhand</option>
+                            <option value="WB">West Bengal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Enter your full address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="Enter your city">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pin">PIN Code</label>
+                        <input type="text" id="pin" placeholder="Enter PIN code">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Information -->
+            <section class="form-section" id="education-section">
+                <h2 class="section-title">Education Information / ਵਿਦਿਅਕ ਜਾਣਕਾਰੀ</h2>
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="sname">School Name</label>
+                        <input type="text" id="sname" placeholder="Enter your school name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="s_from">School Start Date</label>
+                        <input type="date" id="s_from">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="s_to">School End Date</label>
+                        <input type="date" id="s_to">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="cname">College Name</label>
+                        <input type="text" id="cname" placeholder="Enter your college name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c_from">College Start Date</label>
+                        <input type="date" id="c_from">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c_to">College End Date</label>
+                        <input type="date" id="c_to">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="board10">10th Board</label>
+                        <select id="board10">
+                            <option value="">Select Board</option>
+                            <option value="CBSE">CBSE</option>
+                            <option value="ICSE">ICSE</option>
+                            <option value="STATE">State Board</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="percentage10">10th Percentage</label>
+                        <input type="number" id="percentage10" placeholder="Enter percentage" min="0" max="100">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="board12">12th Board</label>
+                        <select id="board12">
+                            <option value="">Select Board</option>
+                            <option value="CBSE">CBSE</option>
+                            <option value="ICSE">ICSE</option>
+                            <option value="STATE">State Board</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="percentage12">12th Percentage</label>
+                        <input type="number" id="percentage12" placeholder="Enter percentage" min="0" max="100">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Skills & Technologies / ਹੁਨਰ</label>
+                        <div class="skills-grid">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">Java</div>
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">Web Development</div>
+                            <div class="skill-tag">React.js</div>
+                            <div class="skill-tag">Node.js</div>
+                            <div class="skill-tag">SQL</div>
+                            <div class="skill-tag">Machine Learning</div>
+                            <div class="skill-tag">Cloud Computing</div>
+                            <div class="skill-tag">DevOps</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Information -->
+            <section class="form-section" id="professional-section">
+                <h2 class="section-title">Professional Information / ਪੇਸ਼ੇਵਰ ਜਾਣਕਾਰੀ</h2>
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="cp_name">Company Name</label>
+                        <input type="text" id="cp_name" placeholder="Enter company name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cp_from">Start Date</label>
+                        <input type="date" id="cp_from">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cp_to">End Date</label>
+                        <input type="date" id="cp_to">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="work">Work Experience</label>
+                        <textarea id="work" rows="5" placeholder="Describe your work experience and responsibilities"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" id="prev-btn">Previous</button>
+                <button type="button" class="btn btn-primary" id="next-btn">Next</button>
+                <button type="submit" class="btn btn-success" id="submit-btn" style="display: none;">Submit Application</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Form navigation
+        const sections = ['personal-section', 'education-section', 'professional-section'];
+        let currentSection = 0;
+
+        const updateFormNavigation = () => {
+            document.querySelectorAll('.form-section').forEach((section, index) => {
+                section.style.display = index === currentSection ? 'block' : 'none';
+            });
+
+            document.querySelectorAll('.progress-step').forEach((step, index) => {
+                step.classList.toggle('active', index <= currentSection);
+            });
+
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const submitBtn = document.getElementById('submit-btn');
+
+            prevBtn.style.display = currentSection === 0 ? 'none' : 'block';
+            nextBtn.style.display = currentSection === sections.length - 1 ? 'none' : 'block';
+            submitBtn.style.display = currentSection === sections.length - 1 ? 'block' : 'none';
+        };
+
+        document.getElementById('next-btn').addEventListener('click', () => {
+            if (currentSection < sections.length - 1) {
+                currentSection++;
+                updateFormNavigation();
+            }
+        });
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            if (currentSection > 0) {
+                currentSection--;
+                updateFormNavigation();
+            }
+        });
+
+        // Initialize form
+        updateFormNavigation();
+    </script>
+</body>
+</html>
